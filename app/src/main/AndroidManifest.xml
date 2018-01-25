@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Add"/>
+        <activity android:name=".Sub"/>
+        <activity android:name=".Mul"/>
+        <activity android:name=".Div"/>
     </application>
 
 </manifest>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Mathquiz</string>
     <string name="Head">Math Quiz</string>
+    <string name="HeadAdd">Add</string>
+    <string name="HeadSub">sub</string>
+    <string name="HeadMul">multiply</string>
+    <string name="HeadDivision">division</string>
 </resources>
