@@ -29,18 +29,22 @@
             android:background="@color/black"
             android:gravity="center"
             android:padding="10dp"
-            android:text="@string/HeadAdd"
+            android:text="Integer Division"
             android:textAllCaps="true"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/White"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/first_group1">
             <TextView
                 android:id="@+id/num1"
                 android:layout_width="0dp"
@@ -55,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+"
+                android:text="/"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
@@ -74,24 +78,47 @@
                 android:gravity="center"
                 android:text="="
                 android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/EditAdd1"
-                android:layout_width="0dp"
-                android:inputType="number"
+            <RadioGroup
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:hint="2" />
+                android:orientation="vertical"
+                android:id="@+id/first_group1"
+                android:layout_alignParentRight="true">
+                <RadioButton
+                    android:id="@+id/yes_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:onClick="Answer1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="15"
+                    android:onClick="Answer1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/first_group2">
             <TextView
                 android:id="@+id/num11"
                 android:layout_width="0dp"
@@ -106,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+"
+                android:text="/"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
@@ -125,25 +152,47 @@
                 android:gravity="center"
                 android:text="="
                 android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/EditAdd11"
-                android:layout_width="0dp"
+            <RadioGroup
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
+                android:orientation="vertical"
+                android:id="@+id/first_group2"
+                android:layout_alignParentRight="true">
+                <RadioButton
+                    android:id="@+id/yes_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Answer2"
 
-                android:gravity="center"
-                android:hint="2" />
+                    tools:text="10"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Answer2"
 
-        </LinearLayout>
+                    tools:text="15"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
 
-        <LinearLayout
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/first_group3">
             <TextView
                 android:id="@+id/num111"
                 android:layout_width="0dp"
@@ -158,7 +207,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+"
+                android:text="/"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
@@ -177,25 +226,47 @@
                 android:gravity="center"
                 android:text="="
                 android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/EditAdd111"
-                android:layout_width="0dp"
+            <RadioGroup
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:inputType="number"
+                android:orientation="vertical"
+                android:id="@+id/first_group3"
+                android:layout_alignParentRight="true">
+                <RadioButton
+                    android:id="@+id/yes_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:onClick="Answer3"
 
-                android:hint="2" />
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="15"
+                    android:onClick="Answer3"
 
-        </LinearLayout>
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
 
-        <LinearLayout
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/first_group4">
             <TextView
                 android:id="@+id/num1111"
                 android:layout_width="0dp"
@@ -210,7 +281,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+"
+                android:text="/"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
@@ -229,25 +300,47 @@
                 android:gravity="center"
                 android:text="="
                 android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/EditAdd1111"
-                android:layout_width="0dp"
+            <RadioGroup
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
+                android:orientation="vertical"
+                android:id="@+id/first_group4"
+                android:layout_alignParentRight="true">
+                <RadioButton
+                    android:id="@+id/yes_radio_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:onClick="Answer4"
 
-                android:gravity="center"
-                android:hint="2" />
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="15"
+                    android:onClick="Answer4"
 
-        </LinearLayout>
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
 
-        <LinearLayout
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/first_group5">
             <TextView
                 android:id="@+id/num11111"
                 android:layout_width="0dp"
@@ -262,7 +355,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+"
+                android:text="/"
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
@@ -281,24 +374,38 @@
                 android:gravity="center"
                 android:text="="
                 android:textAppearance="?android:textAppearanceLarge" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/EditAdd11111"
-                android:layout_width="0dp"
-                android:inputType="number"
-
+            <RadioGroup
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:hint="2" />
+                android:orientation="vertical"
+                android:id="@+id/first_group5"
+                android:layout_alignParentRight="true">
+                <RadioButton
+                    android:id="@+id/yes_radio_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Answer5"
+                    tools:text="0"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/no_radio_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="150"
+                    android:onClick="Answer5"
 
-        </LinearLayout>
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+
+        </RelativeLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Take Answer"
             android:layout_margin="60dp"
-            android:onClick="TakeAddAnswer"/>
+            android:onClick="TakeDivAnswer"/>
     </LinearLayout>
 </ScrollView>
