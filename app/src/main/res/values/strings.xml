@@ -5,4 +5,5 @@
     <string name="HeadSub">sub</string>
     <string name="HeadMul">multiply</string>
     <string name="HeadDivision">division</string>
+    <string name="IntegerDivision">Integer Division</string>
 </resources>
