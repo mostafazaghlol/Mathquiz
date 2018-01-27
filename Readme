@@ -1,0 +1,26 @@
+I made a new app i use [Intent](https://developer.android.com/guide/components/intents-filters.html) idea to bluid this app .the app shows a math quiz in Add, subtract, multiply and divide with random number each time the user will play this game he will face new numbers i use [random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) class from java
+
+>first page
+
+![1|281x500](upload://9VjKpwmOqDvW7t2zDu9xI0PrG9h.png)
+
+>sub page
+
+![3|281x500](upload://4Efd86eMNk8ROvUskkwSLNXlDsC.png)
+![122|281x500](upload://t8A3wPKSATWnjKAxSoQpqmz1z2O.png)
+
+>integer Division page
+
+![5|281x500](upload://gvtEyhS8RgsKoAKCEVCUdEvwQuS.png)
+
+>Add page
+![2|281x500](upload://20AUdV8QkSfI4HnED4giHIqUrCQ.png)
+
+>multiply page
+![4|281x500](upload://eEKJASUaB90HPsrUTMblaubM7uD.png)
+
+>Add page with in the phone .
+![12|281x500](upload://9pHLNPZvGXwBySTlcQaAOa5cuf1.png)
+
+all the code will be [here](https://github.com/mostafazaghlol/Mathquiz)
+give your feedback
