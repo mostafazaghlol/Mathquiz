@@ -76,36 +76,48 @@ public class Sub extends AppCompatActivity {
         }else if(i==1){
             result2=num1-num2;
             CharSequence charSequence = String.valueOf(result2);
+            CharSequence charSequence2 = String.valueOf(result2+(result2-2));
+
             if(result2<0){
                 radioButton2.setText(charSequence);
+                radioButton7.setText(charSequence2);
             }else{
+                radioButton2.setText(charSequence2);
                 radioButton7.setText(charSequence);
             }
         }else if(i==2){
             result3=num1-num2;
             CharSequence charSequence = String.valueOf(result3);
-
+            CharSequence charSequence3 = String.valueOf(result3+(result3-8));
             if(result3>0){
                 radioButton3.setText(charSequence);
+                radioButton8.setText(charSequence3);
             }else{
                 radioButton8.setText(charSequence);
+                radioButton3.setText(charSequence3);
             }
         }else if(i==3){
             result4=num1-num2;
             CharSequence charSequence = String.valueOf(result4);
+            CharSequence charSequence2 = String.valueOf(result4+(result4-7));
             if(result4>0){
                 radioButton4.setText(charSequence);
+                radioButton9.setText(charSequence2);
             }else{
                 radioButton9.setText(charSequence);
+                radioButton4.setText(charSequence2);
             }
         }else if(i==4){
             result5=num1-num2;
             CharSequence charSequence = String.valueOf(result5);
+            CharSequence charSequence2 = String.valueOf(result5+(result5-5));
 
             if(result5>0){
                 radioButton5.setText(charSequence);
+                radioButton10.setText(charSequence2);
             }else{
                 radioButton10.setText(charSequence);
+                radioButton5.setText(charSequence2);
             }
         }
         num1T.setText(String.valueOf(num1));
@@ -114,17 +126,6 @@ public class Sub extends AppCompatActivity {
         if(i==5)
             i=0;
         random =null;
-    }
-
-    public void TakeAddAnswer(View view) {
-        int count=0;
-        if(result1==num1) count++;
-        if(result2==num2) count++;
-        if(result3==num3) count++;
-        if(result4==num4) count++;
-        if(result5==num5) count++;
-        Toast.makeText(this, "your score here is "+count, Toast.LENGTH_SHORT).show();
-
     }
     public void Answer1(View view) {
         // Is the button now checked?
@@ -155,12 +156,12 @@ public class Sub extends AppCompatActivity {
             case R.id.yes_radio_button2:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num2 = Integer.parseInt(value);
                     break;
             case R.id.no_radio_button2:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num2 = Integer.parseInt(value);
                     break;
         }
     }
@@ -174,12 +175,12 @@ public class Sub extends AppCompatActivity {
             case R.id.yes_radio_button3:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num3 = Integer.parseInt(value);
                     break;
             case R.id.no_radio_button3:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num3 = Integer.parseInt(value);
                     break;
         }
     }
@@ -193,12 +194,12 @@ public class Sub extends AppCompatActivity {
             case R.id.yes_radio_button4:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num4 = Integer.parseInt(value);
                     break;
             case R.id.no_radio_button4:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num4 = Integer.parseInt(value);
                     break;
         }
     }
@@ -212,14 +213,25 @@ public class Sub extends AppCompatActivity {
             case R.id.yes_radio_button5:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num5 = Integer.parseInt(value);
                     break;
             case R.id.no_radio_button5:
                 if (checked)
                     value = ((RadioButton) view).getText().toString();
-                    num1 = Integer.parseInt(value);
+                    num5 = Integer.parseInt(value);
                     break;
         }
+    }
+
+    public void TakeSubAnswer(View view){
+        int count=0;
+        if(result1==num1) count++;
+        if(result2==num2) count++;
+        if(result3==num3) count++;
+        if(result4==num4) count++;
+        if(result5==num5) count++;
+        Toast.makeText(this, "your score here is "+count, Toast.LENGTH_SHORT).show();
+
     }
 }
 
